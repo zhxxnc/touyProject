@@ -6,7 +6,6 @@ management.endpoints.web.exposure.include: "*"
 
 logging:
   level:
-    com.deploykube.board: debug
     org.springframework.web.servlet: debug
     org.hibernate.type.descriptor.sql.BasicBinder: trace
 
@@ -19,11 +18,8 @@ spring:
   jpa:
     open-in-view: false
     defer-datasource-initialization: true
-    hibernate.ddl-auto: create
+    hibernate.ddl-auto: none
     show-sql: true
     properties:
       hibernate.format_sql: true
   sql.init.mode: always
-  data.rest:
-    base-path: /api
-    detection-strategy: annotated
