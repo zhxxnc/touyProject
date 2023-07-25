@@ -1,5 +1,7 @@
-package dev.ioexception.touyProject.entity;
+package dev.ioexception.touyProject.entity.comment;
 
+import dev.ioexception.touyProject.entity.Post;
+import dev.ioexception.touyProject.entity.User;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Builder;
